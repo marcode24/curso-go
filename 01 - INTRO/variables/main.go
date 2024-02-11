@@ -32,4 +32,11 @@ func main() {
 	// PI = 3.1416
 	fmt.Println(PI)
 
+	// Uso de comentarios
+	// Este es un comentario de una sola línea
+	/*
+		Este es un comentario de varias líneas
+		Este puede ser útil para explicar el código
+	*/
+
 }
