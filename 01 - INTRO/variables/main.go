@@ -25,4 +25,11 @@ func main() {
 	// Declaracion de variables con shorthand
 	dog3 := "🐶"
 	fmt.Println(dog3)
+
+	// Uso de variables constantes
+	const PI = 3.14
+	// Si intentamos cambiar el valor de una constante, Go nos arrojará un error
+	// PI = 3.1416
+	fmt.Println(PI)
+
 }
