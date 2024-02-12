@@ -95,4 +95,51 @@ func main() {
 	// El operador blank (_) es una variable que se utiliza para descartar valores
 	// que no necesitamos
 	_ = "🐶"
+
+	// Operadores aritméticos
+	// +, -, *, /, %
+
+	var sum1 = 4 + 2
+	fmt.Println(sum1)
+
+	// jerarquía de operadores
+	var sum2 = 4 + 4*5
+	fmt.Println(sum2)
+
+	// Opeardores de asignación
+	// =, +=, -=, *=, /=, %=
+	var x = 10
+	x += 5
+	fmt.Println(x)
+
+	// Declaracion post-incremento y post-decremento
+	// ++, --
+	// no son una expresión sino una declaración
+	var y = 10
+	y++
+	fmt.Println(y)
+
+	var y2 = 10
+	y2--
+	fmt.Println(y2)
+
+	// Operadores de comparación
+	// ==, !=, <, >, <=, >=
+	var z = 10
+	fmt.Println(z == 10)
+
+	var z2 = 10
+	fmt.Println(z2 != 10)
+
+	// Operadores lógicos
+	// &&, ||
+	var age = 18
+	var name = "John"
+	fmt.Println(age >= 18 && name == "John")
+
+	// Operador unario
+	// !, - (negación, negativo)
+	var isTrue = true
+	fmt.Println(!isTrue)
+
 }
