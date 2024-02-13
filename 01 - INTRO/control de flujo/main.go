@@ -77,4 +77,74 @@ func main() {
 	default:
 		fmt.Println("🍕")
 	}
+
+	// for
+	/*
+		for <inicializacion>; <condicion>; <incremento> {
+			<codigo>
+		}
+	*/
+
+	fmt.Println("For")
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	// for continuo
+	/*
+		for <condicion> {
+			<codigo>
+		}
+	*/
+
+	fmt.Println("For continuo")
+
+	x := 0
+	for x < 5 {
+		fmt.Println(x)
+		x++
+	}
+
+	// for forever
+	/*
+		for {
+			<codigo>
+		}
+	*/
+
+	// for range
+	/*
+		for <indice>, <valor> := range <arreglo> {
+			<codigo>
+		}
+	*/
+
+	fmt.Println("For range")
+
+	nums := []uint8{2, 4, 6, 8, 10}
+
+	for i, v := range nums {
+		fmt.Println("Indice:", i, "Valor:", v)
+	}
+
+	for i := range nums {
+		nums[i] *= 2
+	}
+	fmt.Println(nums)
+
+	sports := map[string]string{
+		"basketball": "🏀",
+		"football":   "⚽",
+		"baseball":   "⚾",
+	}
+
+	for k, v := range sports {
+		fmt.Println(k, v)
+	}
+
+	hello := "Hello"
+	for i, v := range hello {
+		fmt.Println(i, string(v), v)
+	}
 }
